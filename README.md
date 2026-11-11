@@ -56,6 +56,9 @@ flowchart LR
 - **멀티스레드 버그 19건** — 세션 · 패킷 반환 시점 문제를 증상 → 원인 → 해결로 기록했습니다 ([BUGFIX_LOG](https://github.com/yjj2123/iocp-chatserver/blob/main/BUGFIX_LOG.md))
 - **2시간 부하 검증** — 접속 · 해제 51만 회, 메모리 변동 0.4%, 에러 0건
 
+<img src="server-iocp-chat/images/soak-private-bytes-2h.png" width="49%"> <img src="server-iocp-chat/images/soak-handle-thread-2h.png" width="49%">
+<sub>2시간 부하 중 메모리(왼쪽) · 핸들과 스레드 수(오른쪽) — 시간이 지나도 늘지 않음</sub>
+
 <br>
 
 ---
