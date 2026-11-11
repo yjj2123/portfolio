@@ -16,7 +16,7 @@
 
 | 출시 후 업데이트 | 시스템 기획서 | 서버 부하 검증 | AI 교차 검증 |
 |:---:|:---:|:---:|:---:|
-| **6회**<br>v1.0.0 → v1.1.3 | **24개 장**<br>장마다 확인 기준 | **에러 0건**<br>1,000 동접 · 2시간 | **37건 차단**<br>잘못된 버그 판정 / 212건 |
+| **6회**<br>v1.0.0 → v1.1.3 | **24개 장**<br>장마다 확인 기준 | **에러 0건**<br>1,000 동접 · 2시간 | **37건**<br>AI 가 잘못 판정한 버그를<br>다른 세션이 걸러 냄 (212건 중) |
 
 <br>
 
@@ -26,9 +26,7 @@
 
 <a href="https://maplestoryworlds.nexon.com/ko/play/d881daaedf5d484f994357db0f8c6438"><img src="planning-maple-village/images/map.png" width="100%"></a>
 
-<a href="https://maplestoryworlds.nexon.com/ko/play/d881daaedf5d484f994357db0f8c6438"><img src="https://img.shields.io/badge/▶_게임_플레이-E8743B?style=for-the-badge"></a>
-<a href="planning-maple-village/maple-village-planning.pdf"><img src="https://img.shields.io/badge/기획서_PDF-2F7FD8?style=for-the-badge"></a>
-<a href="planning-maple-village"><img src="https://img.shields.io/badge/상세_·_쪽_안내-555555?style=for-the-badge"></a>
+**[▶ 게임 플레이](https://maplestoryworlds.nexon.com/ko/play/d881daaedf5d484f994357db0f8c6438)** &nbsp;·&nbsp; **[📄 기획서 PDF](planning-maple-village/maple-village-planning.pdf)** &nbsp;·&nbsp; **[쪽 안내 · 스크린샷](planning-maple-village)**
 
 성격이 제각각인 주민을 데리고 영지를 꾸리고 원정하는 실시간 쿼터뷰 RPG. 규칙과 수치는 직접 정하고, 문서 정리 · 구현 · 테스트는 AI 세션에 나눠 맡겼습니다.
 
@@ -44,8 +42,7 @@
 
 ## 🖥 IOCP 채팅 서버 &nbsp;<sub>C++17 · 개인 프로젝트 · 2026.04 ~ 06</sub>
 
-<a href="https://github.com/yjj2123/iocp-chatserver"><img src="https://img.shields.io/badge/GitHub-코드-181717?style=for-the-badge&logo=github"></a>
-<a href="server-iocp-chat"><img src="https://img.shields.io/badge/부하_검증_그래프-555555?style=for-the-badge"></a>
+**[💻 코드](https://github.com/yjj2123/iocp-chatserver)** &nbsp;·&nbsp; **[📈 부하 검증 그래프](server-iocp-chat)**
 
 ```mermaid
 flowchart LR
@@ -65,7 +62,7 @@ flowchart LR
 
 ## 🖥 TCP Fighter &nbsp;<sub>C++ · select 기반 2D 액션 MMO 서버 · 2026.01 ~ 03</sub>
 
-<a href="https://github.com/yjj2123/tcpfighter-select-mmo"><img src="https://img.shields.io/badge/GitHub-코드-181717?style=for-the-badge&logo=github"></a>
+**[💻 코드](https://github.com/yjj2123/tcpfighter-select-mmo)**
 
 - **2만 세션 접속** — 맵을 625개 섹터로 나눠 주변 9칸에만 전송
 - **서버 권위 좌표** — 클라이언트 좌표가 50px 이상 어긋나면 서버 좌표로 맞춰 위치 조작을 막았습니다
@@ -77,9 +74,11 @@ flowchart LR
 
 ## 🤖 AI 와 일하는 방식
 
-| 1. 역할 나누기 | 2. 문서로 넘기기 | 3. 작게 만들기 | 4. 다른 세션이 검증 | 5. 기록 남기기 |
-|---|---|---|---|---|
-| 세션마다 맡을 일을 지시 파일로 정함 | 기획서 한 장 단위로 넘김. 빈 곳이 있으면 자동 검사가 막음 | 확인할 수 있는 동작 하나씩 | 만든 세션이 채점하지 않음. 통과 표시 없으면 커밋 차단 | 끝날 때 이어 할 일을 남겨 다음 세션이 바로 이어 감 |
+1. **역할 나누기** — 세션마다 맡을 일을 지시 파일로 정합니다
+2. **문서로 넘기기** — 기획서 한 장 단위로 넘기고, 빈 곳이 있으면 자동 검사가 개발을 막습니다
+3. **작게 만들기** — 확인할 수 있는 동작 하나씩 만듭니다
+4. **다른 세션이 검증** — 만든 세션이 채점하지 않고, 통과 표시가 없으면 커밋이 막힙니다
+5. **기록 남기기** — 끝날 때 이어 할 일을 남겨 다음 세션이 바로 이어 갑니다
 
 <br>
 
