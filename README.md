@@ -10,7 +10,19 @@ QA 2년 · C++ 서버 1년 · 메이플스토리 월드 게임 기획 · 출시
 
 <br>
 
-| 분야 | 프로젝트 | 한 줄 소개 | 자료 |
+## 📌 이렇게 보시면 됩니다
+
+| 보시는 분 | 먼저 볼 것 | 이어서 볼 것 |
+|---|---|---|
+| **기획** | [메이플 빌리지 기획서 PDF](planning-maple-village/maple-village-planning.pdf) 2 ~ 4쪽 (한 장 요약 · 전체 흐름) | [게임 플레이](https://maplestoryworlds.nexon.com/ko/play/d881daaedf5d484f994357db0f8c6438) → 관심 시스템 장 ([쪽 안내](planning-maple-village)) |
+| **서버** | [IOCP 채팅 서버](server-iocp-chat) 요약 | 코드 저장소의 버그 기록 19건 · 2시간 부하 검증 원본 |
+| **AI · 기획 + 개발** | [메이플 빌리지](planning-maple-village) → [IOCP 채팅 서버](server-iocp-chat) | 기획서 13 ~ 15쪽 (서버 판정 · 데이터 · 확인 기준 개발 명세) |
+
+<br>
+
+## 프로젝트
+
+| 분야 | 프로젝트 | 한 줄 소개 | 바로가기 |
 |:---:|---|---|---|
 | 🎮 기획 | [**메이플 빌리지**](planning-maple-village) | 메이플스토리 월드 SRPG · 1인 개발 · 2026.10.31 출시 | [플레이](https://maplestoryworlds.nexon.com/ko/play/d881daaedf5d484f994357db0f8c6438) · [기획서 PDF](planning-maple-village/maple-village-planning.pdf) |
 | 🖥 서버 | [**IOCP 채팅 서버**](server-iocp-chat) | Windows IOCP 멀티스레드 서버 · 1,000 동접 2시간 검증 | [코드](https://github.com/yjj2123/iocp-chatserver) |

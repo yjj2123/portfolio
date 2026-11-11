@@ -6,6 +6,14 @@
 
 `C++17` `IOCP` `Lock-Free` `MSSQL` `AES-128-CTR + HMAC-SHA256`
 
+## 코드 저장소에서 볼 것
+
+| 순서 | 문서 | 내용 |
+|:---:|---|---|
+| 1 | [README · 아키텍처](https://github.com/yjj2123/iocp-chatserver#아키텍처) | 스레드 구조, 설계 결정 |
+| 2 | [BUGFIX_LOG.md](https://github.com/yjj2123/iocp-chatserver/blob/main/BUGFIX_LOG.md) | 멀티스레드 버그 19건 — 증상 → 원인 → 해결 |
+| 3 | [LEAK_VERIFICATION.md](https://github.com/yjj2123/iocp-chatserver/blob/main/evidence/LEAK_VERIFICATION.md) | 2시간 부하 검증 원본 |
+
 ## 핵심
 
 - **락 없는 컨텐츠 처리** — 컨텐츠 전담 스레드 하나, DB 호출은 별도 스레드
